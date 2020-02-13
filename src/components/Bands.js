@@ -4,7 +4,7 @@ import Band from './Band';
 
 
 const Bands = props => {
-    const bands = props.bands.map(band => <Band key={band.id} name={band.name} deleteBand={props.deleteBand}/>)
+    const bands = props.bands.map(band => <Band key={band.id} band={band}  deleteBand={props.deleteBand}/>)
 
  
 

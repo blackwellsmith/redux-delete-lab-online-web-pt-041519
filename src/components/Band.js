@@ -5,15 +5,15 @@ import React, { Component } from 'react';
 class Band extends Component {
 
   handleOnClick = () => {
-    console.log(this.props.id)
-    this.props.deleteBand(this.props.id)
+    
+    this.props.deleteBand(this.props.band.id)
   }
 
   render() {
     return(
       <div>
-        <li>{this.props.name}</li>
-        <button onClick={this.props.handleOnClick}>
+        <li>{this.props.band.name}</li>
+        <button onClick={this.handleOnClick}>
           DELETE
         </button>
       </div>
